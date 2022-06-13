@@ -1,6 +1,5 @@
 {
     "root": true,
-    "parser": "babel-eslint",
     "extends" :  [
         "eslint:recommended",
         "plugin:react/recommended"
@@ -12,6 +11,8 @@
             "argsIgnorePattern": "^_",
             "varsIgnorePattern": "^_"
         }
-    ]
+    ],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
