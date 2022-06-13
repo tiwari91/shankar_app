@@ -7,8 +7,7 @@ import {
   List,
   Link,
   Icon,
-  ListItem,
-  useColorModeValue
+  ListItem
 } from '@chakra-ui/react'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { Section, About, Bio, Year } from './style'
@@ -16,18 +15,6 @@ import { Section, About, Bio, Year } from './style'
 const Profile = () => {
   return (
     <Container>
-      <Box flex={1} align="right">
-        <Box
-          borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-          p={3}
-          mb={6}
-          align="center"
-        >
-          Hey there, I&apos;m Shankar!
-        </Box>
-      </Box>
-
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">

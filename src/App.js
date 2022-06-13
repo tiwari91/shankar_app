@@ -1,16 +1,15 @@
-import { VStack } from '@chakra-ui/layout'
-import { Container } from '@chakra-ui/react'
-import Header from './components/header'
-import Profile from './components/profile'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './components/home'
+import Post from './components/post'
 
 function App() {
   return (
-    <VStack p={1}>
-      <Header></Header>
-      <Container maxW="container.md" pt={12}>
-        <Profile></Profile>
-      </Container>
-    </VStack>
+    <Router>
+      <Routes>
+        <Route path="/post" element={<Post />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   )
 }
 

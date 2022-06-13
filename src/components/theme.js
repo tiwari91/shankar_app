@@ -9,18 +9,12 @@ const styles = {
   })
 }
 
-const config = {
-  initialColorMode: 'light',
-  useSystemColorMode: false
-}
-
 const fonts = {
   heading: "'M PLUS Rounded 1c'"
 }
 
 const theme = extendTheme({
   styles,
-  config,
   fonts
 })
 

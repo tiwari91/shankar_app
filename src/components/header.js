@@ -1,5 +1,13 @@
 import React from 'react'
-import { Container, Box, useColorModeValue } from '@chakra-ui/react'
+import { Link as RouterLink } from 'react-router-dom'
+import {
+  Container,
+  Box,
+  useColorModeValue,
+  Link,
+  IconButton
+} from '@chakra-ui/react'
+import { StarIcon } from '@chakra-ui/icons'
 import ThemeButton from './themebutton'
 
 function Header() {
@@ -19,7 +27,22 @@ function Header() {
         align="center"
         justify="space-between"
       >
+        <Link as={RouterLink} _activeLink={{ fontWeight: 'bold' }} to="/">
+          <IconButton
+            arial-label="Home"
+            icon={<StarIcon />}
+            onClick={''}
+          ></IconButton>
+        </Link>
         <Box flex={1} align="right">
+          <Link
+            pr={10}
+            as={RouterLink}
+            _activeLink={{ fontWeight: 'bold' }}
+            to="/post"
+          >
+            Post
+          </Link>
           <ThemeButton />
         </Box>
       </Container>
