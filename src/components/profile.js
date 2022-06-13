@@ -43,6 +43,7 @@ const Profile = () => {
           ml={{ md: 6 }}
         >
           <Image
+            _hover={{ bg: 'teal.800' }}
             borderColor="whiteAlpha.800"
             maxWidth="100px"
             borderWidth={2}

@@ -9,6 +9,7 @@ function Header() {
       as="nav"
       w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
+      boxShadow="md"
     >
       <Container
         display="flex"
